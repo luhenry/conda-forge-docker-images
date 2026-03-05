@@ -40,7 +40,7 @@ jobs:
           - DOCKERIMAGE: linux-anvil-aarch64
             DOCKERFILE: linux-anvil
             DOCKERTAG: "cos7"
-            DISTRO_ARCH: "arm64"
+            DISTRO_ARCH: "arm64/v8"
             DISTRO_NAME: "centos"
             DISTRO_VER: "7"
             SHORT_DESCRIPTION: "conda-forge build image for CentOS 7 on aarch64"
@@ -76,7 +76,7 @@ jobs:
             DOCKERFILE: linux-anvil-cuda
             DOCKERTAG: "ubi8"
             CUDA_VER: "11.8.0"
-            DISTRO_ARCH: "arm64"
+            DISTRO_ARCH: "arm64/v8"
             DISTRO_NAME: "ubi"
             DISTRO_VER: "8"
             SHORT_DESCRIPTION: "conda-forge build image for UBI 8 on aarch64 with CUDA 11.8"
@@ -92,7 +92,7 @@ jobs:
           - DOCKERIMAGE: linux-anvil-aarch64
             DOCKERFILE: linux-anvil
             DOCKERTAG: "alma8"
-            DISTRO_ARCH: "arm64"
+            DISTRO_ARCH: "arm64/v8"
             DISTRO_NAME: "almalinux"
             DISTRO_VER: "8"
             SHORT_DESCRIPTION: "conda-forge build image for Alma 8 on aarch64"
@@ -116,7 +116,7 @@ jobs:
           - DOCKERIMAGE: linux-anvil-aarch64
             DOCKERFILE: linux-anvil
             DOCKERTAG: "alma9"
-            DISTRO_ARCH: "arm64"
+            DISTRO_ARCH: "arm64/v8"
             DISTRO_NAME: "almalinux"
             DISTRO_VER: "9"
             SHORT_DESCRIPTION: "conda-forge build image for Alma 9 on aarch64"
@@ -140,7 +140,7 @@ jobs:
           - DOCKERIMAGE: linux-anvil-aarch64
             DOCKERFILE: linux-anvil
             DOCKERTAG: "alma10"
-            DISTRO_ARCH: "arm64"
+            DISTRO_ARCH: "arm64/v8"
             DISTRO_NAME: "almalinux"
             DISTRO_VER: "10"
             SHORT_DESCRIPTION: "conda-forge build image for Alma 10 on aarch64"

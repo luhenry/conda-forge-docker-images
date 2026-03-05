@@ -30,7 +30,7 @@ ADD qemu-s390x-static /usr/bin/qemu-s390x-static
 
 # (arm64v8/centos:7 only) Fix language override to get a working en_US.UTF-8 locale; backports:
 # https://github.com/CentOS/sig-cloud-instance-build/commit/2892c17fa8a520e58c3f42cd56587863fe675670
-RUN if [ "${DISTRO_ARCH}" = "arm64" ] && [ "${DISTRO_NAME}${DISTRO_VER}" = "centos7" ]; then \
+RUN if [ "${DISTRO_ARCH}" = "arm64/v8" ] && [ "${DISTRO_NAME}${DISTRO_VER}" = "centos7" ]; then \
         sed -i 's/override_install_langs=en_US\.UTF-8/override_install_langs=en_US.utf8/' /etc/yum.conf ; \
     fi
 
