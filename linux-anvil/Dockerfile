@@ -27,6 +27,7 @@ ADD https://www.random.org/cgi-bin/randbyte?nbytes=4096&format=h /opt/docker/etc
 ADD qemu-aarch64-static /usr/bin/qemu-aarch64-static
 ADD qemu-ppc64le-static /usr/bin/qemu-ppc64le-static
 ADD qemu-s390x-static /usr/bin/qemu-s390x-static
+ADD qemu-riscv64-static /usr/bin/qemu-riscv64-static
 
 # (arm64v8/centos:7 only) Fix language override to get a working en_US.UTF-8 locale; backports:
 # https://github.com/CentOS/sig-cloud-instance-build/commit/2892c17fa8a520e58c3f42cd56587863fe675670
